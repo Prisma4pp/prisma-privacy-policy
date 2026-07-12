@@ -51,6 +51,18 @@
     .nav-links a { color: var(--text-muted); font-size: 13px; font-weight: 600; text-decoration: none; }
     .nav-links a:hover { color: var(--blue); }
     .nav-links a.active { color: var(--blue); }
+    .nav-right { display: flex; align-items: center; gap: 18px; }
+    .lang-pill {
+      background: rgba(187,255,119,0.08);
+      border: 0.5px solid var(--border-blue);
+      color: var(--blue);
+      padding: 5px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .lang-pill:hover { background: rgba(187,255,119,0.16); }
 
     main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
 
@@ -144,10 +156,13 @@
         <polyline points="139.07 28.05 145.57 28.05 152 28.05 152.07 28.05 165 28.05 165 105.8 152 105.8 152 41.05 145.57 41.05 139.07 41.05 132.57 41.05 126.07 41.05 119.56 41.05 113.06 41.05 113.06 34.55 113.06 28.05 119.56 28.05 126.07 28.05 132.57 28.05 139.07 28.05"/>
       </svg>
     </div>
-    <div class="nav-links">
-      <a href="index.html" class="active">Privacidad</a>
-      <a href="https://prisma4pp.github.io/prisma-terms-and-conditions/">Términos</a>
-      <a href="https://prisma4pp.github.io/prisma-delete-account/">Eliminar cuenta</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" class="active">Privacidad</a>
+        <a href="https://prisma4pp.github.io/prisma-terms-and-conditions/">Términos</a>
+        <a href="https://prisma4pp.github.io/prisma-delete-account/">Eliminar cuenta</a>
+      </div>
+      <a href="en.html" class="lang-pill">EN</a>
     </div>
   </nav>
 
@@ -265,7 +280,6 @@
   <footer>
     <p>Prisma · <a href="mailto:prisma4pp@gmail.com">prisma4pp@gmail.com</a></p>
     <div class="footer-links">
-      <a href="en.html">English version</a>
       <a href="https://prisma4pp.github.io/prisma-terms-and-conditions/">Términos y condiciones</a>
       <a href="https://prisma4pp.github.io/prisma-delete-account/">Eliminar cuenta</a>
     </div>
